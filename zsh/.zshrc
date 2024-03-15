@@ -73,7 +73,10 @@ ZSH_THEME="robbyrussell"
 plugins=(
   git
   z
+  zsh-vi-mode
 )
+
+ZVM_VI_INSERT_ESCAPE_BINDKEY=jk
 
 source $ZSH/oh-my-zsh.sh
 
@@ -111,3 +114,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 eval "$(zoxide init zsh)"
+
+bindkey -v
+bindkey -M viins 'jk' vi-cmd-mode
