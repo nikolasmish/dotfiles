@@ -53,7 +53,7 @@
 
     # Set the font
     # font = "Noto Sans 11"
-    font = "Hack Nerd Font 11"
+    font = "Inter 13"
 
     # Set line height to font height
     line_height = 0
@@ -74,7 +74,7 @@
     #  %% Literal %
 
     markup = full
-    format = "<b>%a</b>\n%s"
+    format = "<b>%a</b>\n%s\n%b"
 
     # Left align the text
     alignment = left
@@ -101,7 +101,7 @@
     # hide_duplicate_count = false
 
     # Display indicators for URLs (U) and actions (A).
-    show_indicators = yes
+    show_indicators = false
 
     
     # ---- Icons ---- #
